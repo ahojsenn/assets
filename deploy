@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+
+echo $1
+
+echo "deploying to github"
+git add .
+git commit -m "new images..."
+git pull --rebase
+git push
+open https://github.com/ahojsenn/images
